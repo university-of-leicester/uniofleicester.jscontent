@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts">
+
+ <javascript
+     id="++resource++uniofleicester.jscontent/jquery.easytabs.min.js"/>
+
+ <javascript
+     id="++resource++uniofleicester.jscontent/jscontent.js"
+     />
+
+</object>
+

@@ -6,6 +6,7 @@
 
  <javascript
      id="++resource++uniofleicester.jscontent/jscontent.js"
+     expression="context/@@jscontent_allowed"
      />
 
 </object>

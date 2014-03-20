@@ -9,5 +9,19 @@
         directory="resources"
         />
 
+    <browser:page
+        name="jscontent_allowed"
+        for="*"
+        permission="zope2.View"
+        class=".controlpanel.JSAllowedView"
+        />
+
+    <browser:page
+        name="allowed-sections"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        permission="cmf.ManagePortal"
+        class=".controlpanel.AllowedSectionsView"
+        />
+
 </configure>
 

@@ -5,6 +5,8 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="uniofleicester.jscontent">
 
+  <five:registerPackage package="." initialize=".initialize" />
+
   <include package=".browser" />
 
   <genericsetup:registerProfile
@@ -12,6 +14,14 @@
       title="uniofleicester.jscontent"
       directory="profiles/default"
       description="Installs the uniofleicester.jscontent package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="uniofleicester.jscontent (uninstall)"
+      directory="profiles/uninstall"
+      description='Extension uninstall profile for the uniofleicester.jscontent'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   <!-- -*- extra stuff goes here -*- -->

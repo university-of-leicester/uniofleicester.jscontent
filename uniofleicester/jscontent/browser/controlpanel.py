@@ -31,5 +31,6 @@ class JSAllowedView(BrowserView):
 
         path = ('', ) + context_path[len(portal_path):]
 
-        url = '/'.join(path)
+        url = '/'.join(path) if len(path) > 1 else '/'
+
         return any([url.startswith(x) for x in settings.section])

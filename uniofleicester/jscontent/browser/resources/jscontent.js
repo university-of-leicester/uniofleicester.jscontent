@@ -7,8 +7,8 @@ $(document).ready(function() {
 
   $('.show-all').click(function(evt) {
     evt.preventDefault();
-    var allSections = $(this).parents(".uol-accordion").find(".uol-accordion-section");
-    var allPanels = allSections.find('.uol-accordion-body');
+    var allSections = $(this).parent(".uol-accordion").children(".uol-accordion-section");
+    var allPanels = allSections.children('.uol-accordion-body');
     var some_hidden = allPanels.filter(':hidden').length > 0;
 
     if (some_hidden) {
